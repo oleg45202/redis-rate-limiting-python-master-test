@@ -130,6 +130,7 @@ STATICFILES_DIR = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 
-REDIS_HOST = os.getenv('REDIS_HOST', '1271.0.0.1')
-REDIS_PORT = os.getenv('REDIS_PORT', '63791')
-REDIS_DB = os.getenv('REDIS_DB', '01')
+REDIS_HOST = os.getenv('REDIS_HOST', 'eu1-main-loon-30802.lambda.store')
+REDIS_PORT = os.getenv('REDIS_PORT', '30802')
+REDIS_DB = os.getenv('REDIS_DB', 'test')
+REDIS_PASSWORD = os.getenv('REDIS_PASSWORD', '54001900be7e4356a6851aaa027fa1ed')
