@@ -28,7 +28,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7ogsf#3j^jo=i^q(5(ai_fh=iao=vhimkh602!x0%zm98ecana'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["localhost", ".now.sh", "*"]
 
@@ -125,10 +125,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = "/static/"
-# STATICFILES_DIR = [
-#     os.path.join(BASE_DIR, 'static')
-# ]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+STATICFILES_DIR = [
+    os.path.join(BASE_DIR, 'static')
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 
 REDIS_HOST = os.getenv('REDIS_HOST', '1271.0.0.1')
 REDIS_PORT = os.getenv('REDIS_PORT', '63791')
