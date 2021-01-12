@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "TestVercel",
+  "builds": [
+    {
+      "src": "index.py",
+      "use": "@now/python@canary",
+      "config": { "maxLambdaSize": "25mb" }
+    }
+  ],
+  "routes": [{"src": "/(.*)", "dest": "/"}]
+}
