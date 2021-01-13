@@ -18,7 +18,7 @@
   ],
   "routes": [ {
       "src": "/(.*)",
-      "dest": "configuration/wsgi.py"
+      "dest": "/"
     }, {
       "src": "/static/(.*)",
       "dest": "/static/$1"
