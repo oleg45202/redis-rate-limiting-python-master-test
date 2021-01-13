@@ -3,14 +3,14 @@
   "name": "NeeleyCompany12",
   "builds": [
     {
-      "src": "test/index.py",
+      "src": "index.py",
       "use": "@now/python@canary",
       "config": { "maxLambdaSize": "25mb" }
     },{
-      "src": "test/now_build_staticfiles.sh",
+      "src": "now_build_staticfiles.sh",
       "use": "@now/static-build",
       "config": {
-        "distDir": "static_root"
+        "distDir": "test/static_root"
       }
     }
   ],
