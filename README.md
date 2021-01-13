@@ -24,7 +24,7 @@ Show how the redis works with Django(Python).
 </p>
 
 <p>
-    <a href="https://vercel.com/new/git/external?repository-url=https://github.com/oleg45202/redis-rate-limiting-python-master-test" target="_blank">
+    <a href="https://vercel.com/new/git/external?repository-url=https://github.com/oleg45202/redis-rate-limiting-python-master-test/tree/direct" target="_blank">
         <img src="https://vercel.com/button" alt="Deploy with Vercel" width="200px" height="50px"/>
     </a>
 </p>
