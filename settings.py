@@ -61,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'test/core/templates'),
         ],        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,9 +127,9 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATICFILES_DIR = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'test/core/static')
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+STATIC_ROOT = os.path.join(BASE_DIR, 'test/static_root')
 #
 REDIS_HOST = os.getenv('REDIS_HOST', 'eu1-main-loon-30802.lambda.store')
 REDIS_PORT = os.getenv('REDIS_PORT', '30802')
