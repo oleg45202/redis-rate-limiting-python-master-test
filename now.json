@@ -3,20 +3,20 @@
   "name": "NeeleyCompany12",
   "builds": [
     {
-      "src": "index.py",
+      "src": "test/index.py",
       "use": "@now/python@canary",
       "config": { "maxLambdaSize": "25mb" }
     },{
-      "src": "now_build_staticfiles.sh",
+      "src": "test/now_build_staticfiles.sh",
       "use": "@now/static-build",
       "config": {
-        "distDir": "test/static_root"
+        "distDir": "static_root"
       }
     }
   ],
-  "routes": [{"src": "/(.*)", "dest": "test/"}, {
+  "routes": [{"src": "/(.*)", "dest": "/"}, {
       "src": "/static/(.*)",
-      "dest": "test/static/$1"
+      "dest": "/static/$1"
     }
   ]
 }
