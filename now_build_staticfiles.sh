@@ -12,5 +12,5 @@ python3.6 get-pip.py
 pip install -r requirements.txt
 
 # Build staticfiles
-python3.6 manage.py collectstatic
+python3.6 test/manage.py collectstatic
 
