@@ -3,7 +3,7 @@
   "name": "NeeleyCompany12",
   "builds": [
     {
-      "src": "index.py",
+      "src": "configuration/index.py",
       "use": "@now/python@canary",
       "config": { "maxLambdaSize": "25mb" }
     },{
