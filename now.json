@@ -3,9 +3,11 @@
   "name": "NeeleyCompany12",
   "builds": [
     {
-      "src": "index.py",
-      "use": "@now/python@canary",
-      "config": { "maxLambdaSize": "25mb" }
+      "src": "configuration/wsgi.py",
+      "use": "@ardnt/now-python-wsgi",
+      "config": {
+        "maxLambdaSize": "30mb"
+      }
     },{
       "src": "now_build_staticfiles.sh",
       "use": "@now/static-build",
@@ -14,7 +16,10 @@
       }
     }
   ],
-  "routes": [{"src": "/(.*)", "dest": "/"}, {
+  "routes": [ {
+      "src": "/(.*)",
+      "dest": "configuration/wsgi.py"
+    }, {
       "src": "/static/(.*)",
       "dest": "/static/$1"
     }
