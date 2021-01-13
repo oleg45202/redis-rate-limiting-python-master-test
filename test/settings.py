@@ -129,7 +129,7 @@ STATIC_URL = "/static/"
 STATICFILES_DIR = [
     os.path.join(BASE_DIR, 'static')
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+STATIC_ROOT = os.path.join(BASE_DIR, '/test/static_root')
 #
 REDIS_HOST = os.getenv('REDIS_HOST', 'eu1-main-loon-30802.lambda.store')
 REDIS_PORT = os.getenv('REDIS_PORT', '30802')
