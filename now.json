@@ -10,7 +10,7 @@
       "src": "now_build_staticfiles.sh",
       "use": "@now/static-build",
       "config": {
-        "distDir": "test/static_root"
+        "distDir": "static_root"
       }
     }
   ],
